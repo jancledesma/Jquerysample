@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#grad1").fadeToggle("slow");
+            $("#grad2").delay(300).fadeToggle("slow");
+            $("#grad3").delay(600).fadeToggle("slow");
+            $("div").animate({
+                right: '250px',
+                opacity: '1',
+                height: '300px',
+                width: '300px',
+            });
+        });
+        $("#username").keydown(function(event){ 
+        let size = document.getElementById('username').value.length;
+            if(size < 7){
+                $("p").html("Username must be atleast 8 characters");
+            }
+            else {
+                $("p").html(" ");
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <button>Click me!</button>
+    <div class="grid-container">
+        <div class="box" id="grad1"></div>
+        <div class="box" id="grad2"></div>
+        <div class="box" id="grad3"></div>
+    </div>
+
+    Enter username: <input type="text" id="username" name = "username">
+    <p></p>
+
+<!-- <script src="script.js"></script> -->
+
+</script>
+</body>
+</html>

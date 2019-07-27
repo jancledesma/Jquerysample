@@ -1,0 +1,34 @@
+#grad1 {
+    width: 300px;
+    height: 300px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right,#ff8000,#515559 );
+}
+
+.grid-container {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color:white;
+    padding: 10px;
+  }
+
+#grad2 {
+    width: 300px;
+    height: 300px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right,#ff8000,#515559 ); /* Standard syntax (must be last) */
+}
+  
+#grad3 {
+    width: 300px;
+    height: 300px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right,#ff8000,#515559 ); /* Standard syntax (must be last) */
+}
+
+p{
+    color: red;
+}
